@@ -1,0 +1,30 @@
+package com.example.localFilesDelete;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.IOException;
+
+@SpringBootApplication
+public class LocalFilesDeleteApplication {
+
+	public static void main(String[] args) throws IOException {
+		SpringApplication.run(LocalFilesDeleteApplication.class, args);
+////		File location = new File("C:\\Users\\user\\AppData\\Local\\TempC:\\Users\\user\\AppData\\Local\\Temp");
+////        FileUtils.cleanDirectory(location);
+//		
+//		String myStr = "Hello planet earth, you are a great planet.";
+//		System.out.println(myStr.length());
+//	    System.out.println(myStr.lastIndexOf("e"));
+		
+	}
+	 @Bean
+	   public RestTemplate getRestTemplate() {
+	      return new RestTemplate();
+	   }
+
+}

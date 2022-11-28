@@ -1,0 +1,12 @@
+
+…
+java:S3305%"VInject this field value directly into "orderItemReader", the only method that uses it.(²ğ²İH›ERCRITICALZ
+CODE_SMELL
+…	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(“’šHœERMINORZ
+CODE_SMELL
+…
+java:S3305"VInject this field value directly into "emailSenderStep", the only method that uses it.(ô‚àËHERCRITICALZ
+CODE_SMELL
+„
+java:S3305"UInject this field value directly into "emailSenderJob", the only method that uses it.(ÿ£î°H›ERCRITICALZ
+CODE_SMELL

@@ -1,0 +1,14 @@
+
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(×µîÂÿÿÿÿÿHùRMINORZ
+CODE_SMELL
+\
+java:S1128	")Remove this unused import 'java.io.File'.(†Ð¥Å8›²ÒÓÈ0HúRMINORZ
+CODE_SMELL
+o
+java:S1128"<Remove this unused import 'org.apache.commons.io.FileUtils'.(À¿Ù´8É¢ÚÉÈ0HüRMINORZ
+CODE_SMELL
+Ÿ
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8É¢ÚÉÈ0HþRMINORZ
+CODE_SMELL
+n	java:S125"<This block of commented-out lines of code should be removed.(‹ü¬Î8®Œ£ðÉ0H€RMAJORZ
+CODE_SMELL

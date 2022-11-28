@@ -1,0 +1,54 @@
+package com.example.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.entity.Student;
+import com.example.demo.entity.Student;
+import com.example.demo.repository.StudentRepository;
+import com.example.demo.xml.ConvertInToXml;
+@Service
+public class StudentService {
+	
+	@Autowired
+	public StudentRepository studentRepository;
+	
+	Optional<Student> s;
+	
+	@Autowired
+	public ConvertInToXml convertInToXml;
+	
+	public List<Student> getAllStudents() 
+	{
+		List<Student> student= new ArrayList<>();
+		studentRepository.findAll().forEach(student::add);
+		return student;
+
+	}
+
+	public void addStudent(Student student) 
+	{
+		studentRepository.save(student)	;		
+	}
+
+	public void updateStudent(Integer id, Student student) {
+		studentRepository.save(student);
+	}
+
+	public void deleteStudent(Integer id) 
+	{
+		studentRepository.deleteById(id);
+	} 
+	
+	public Optional<Student> getStudent(int id) {
+		s= studentRepository.findById(id);
+		convertInToXml.convertIToXml(s);
+		return s;
+	}
+}

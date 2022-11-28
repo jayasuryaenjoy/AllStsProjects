@@ -1,0 +1,67 @@
+package com.example.apachecamel.apachecamel.routes.a;
+
+import java.time.LocalTime;
+
+import org.apache.camel.Exchange;
+import org.apache.camel.Processor;
+import org.apache.camel.builder.RouteBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class MyFristTimerRoutes extends RouteBuilder {
+	
+	@Autowired
+	private GetBeanForTime getBeanForTime;
+	
+	@Autowired
+	private Simple simple;
+	
+
+	@Override
+	public void configure() throws Exception {
+		// TODO Auto-generated method stub
+		from("timer:frist-timer")
+		.log("${body}")
+		.transform().constant("ch jaya surya ")
+		.log("${body}")
+//		.transform().constant("current time"+ LocalTime.now())
+//		.bean("getBeanForTime")
+		.bean(getBeanForTime)
+		.log("${body}")
+		.bean(simple)
+		.log("${body}")
+		.bean(new SimpleProcesser())
+		.to("log:frist-timer");
+	}
+
+}
+
+@Component
+class GetBeanForTime{
+	public String getBeanForTime() {
+		return "current time"+ LocalTime.now();
+	}
+}
+@Component
+class Simple{
+	Logger logger = LoggerFactory.getLogger(Simple.class);
+	public void simple(String massage) {
+		logger.info("Simple class "+massage);
+	}
+}
+
+class SimpleProcesser implements Processor{
+	Logger logger = LoggerFactory.getLogger(SimpleProcesser.class);
+	
+	@Override
+	public void process(Exchange exchange) throws Exception {
+	
+		logger.info("SimpleProcesser that implements Processor"+ exchange.getMessage().getBody());
+	}
+}
+
+

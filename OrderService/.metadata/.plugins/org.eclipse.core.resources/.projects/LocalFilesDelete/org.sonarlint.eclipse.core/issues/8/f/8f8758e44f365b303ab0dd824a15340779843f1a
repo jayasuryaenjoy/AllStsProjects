@@ -1,0 +1,27 @@
+
+y
+java:S1128"ARemove this unused import 'org.springframework.http.HttpHeaders'.(ãŸñ×úÿÿÿÿ8ßØÊÊ0H­RMINORZ
+CODE_SMELL
+s
+java:S1128"@Remove this unused import 'org.springframework.http.HttpEntity'.(ÂéÓ8ßØÊÊ0H¯RMINORZ
+CODE_SMELL
+s	java:S1251"<This block of commented-out lines of code should be removed.(ú€§³øÿÿÿÿ8ßØÊÊ0H±RMAJORZ
+CODE_SMELL
+—
+java:S1149%"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(Ôô¡Óüÿÿÿÿ8ßØÊÊ0H·RMAJORZ
+CODE_SMELL
+e
+java:S1128
+"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ßØÊÊ0H¸RMINORZ
+CODE_SMELL
+w
+java:S1128"?Remove this unused import 'org.springframework.http.MediaType'.(úŸİ¯şÿÿÿÿ8ßØÊÊ0HºRMINORZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(×µîÂÿÿÿÿÿH¼RMINORZ
+CODE_SMELL
+W
+java:S3751"Make this method non "private".(Öç¬¤ùÿÿÿÿ8ßØÊÊ0H½RMAJORZ
+CODE_SMELL
+x
+java:S1128"@Remove this unused import 'org.springframework.http.HttpMethod'.(Ê¨Ä¡øÿÿÿÿ8ßØÊÊ0H¾RMINORZ
+CODE_SMELL

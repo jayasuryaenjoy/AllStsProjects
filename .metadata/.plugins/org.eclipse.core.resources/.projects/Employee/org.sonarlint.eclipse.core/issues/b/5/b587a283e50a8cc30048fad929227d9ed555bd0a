@@ -1,0 +1,12 @@
+
+ä
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‰ÉêË¯ˇˇˇˇHüGRMINORZ
+CODE_SMELL
+Ö
+java:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(£∆‡‡H°GRMINORZ
+CODE_SMELL
+Ö	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”€§ÿH£GRMINORZ
+CODE_SMELL
+
+java:S1128"SRemove this unused import 'org.springframework.web.bind.annotation.RequestMapping'.(ˆªøÎH§GRMINORZ
+CODE_SMELL

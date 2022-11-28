@@ -1,0 +1,7 @@
+
+…	java:S116"ZRename this field "city_repository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õı©H–GRMINORZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ÿÎ±ıÿÿÿÿH—GRMINORZ
+CODE_SMELL
+}	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ô± şÿÿÿÿH˜GRMINORZ
+CODE_SMELL

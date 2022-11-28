@@ -1,0 +1,16 @@
+
+i
+java:S1135"2Complete the task associated to this TODO comment.(» æžÿÿÿÿÿ8à°° Ê0HÍRINFOZ
+CODE_SMELL
+~
+java:S1192"HDefine a constant instead of duplicating this literal "${body}" 4 times.(¬©‚®8’Û¥¡Ê0HÕRCRITICALZ
+CODE_SMELL
+t
+java:S3457?"AFormat specifiers should be used instead of string concatenation.(ô®€Î8‰©ì¡Ê0HíRMAJORZ
+CODE_SMELL
+y
+java:S34575"AFormat specifiers should be used instead of string concatenation.(ÎØ¶¯ýÿÿÿÿ8œÒÏ¡Ê0HáRMAJORZ
+CODE_SMELL
+o
+java:S26295"7Use the built-in formatting to construct this argument.(ÎØ¶¯ýÿÿÿÿ8œÒÏ¡Ê0HàRMAJORZ
+CODE_SMELL

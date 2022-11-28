@@ -1,0 +1,50 @@
+package com.example.demo.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.entity.Student;
+import com.example.demo.entity.Student;
+import com.example.demo.repository.StudentRepository;
+@Service
+public class StudentService {
+	
+	@Autowired
+	public StudentRepository StudentRepository;
+	
+	Optional<Student> s;
+	
+	public List<Student> getAllStudents() 
+	{
+		List<Student> student= new ArrayList<>();
+		StudentRepository.findAll().forEach(student::add);
+		return student;
+
+	}
+
+	public void addStudent(Student student) 
+	{
+		StudentRepository.save(student)	;		
+	}
+
+	public void updateStudent(Integer id, Student student) {
+		StudentRepository.save(student);
+	}
+
+	public void deleteStudent(Integer id) 
+	{
+		StudentRepository.deleteById(id);
+	} 
+	
+	public Optional<Student> getStudent(int id) {
+		s= StudentRepository.findById(id);
+		
+		return s;
+	}
+}

@@ -1,0 +1,37 @@
+package com.example.apachecamel.apachecamel.routes.a;
+
+import java.time.LocalTime;
+
+import org.apache.camel.builder.RouteBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+
+@Component
+public class MyFristTimerRoutes extends RouteBuilder {
+	
+	@Autowired
+	private GetBeanForTime getBeanForTime;
+
+	@Override
+	public void configure() throws Exception {
+		// TODO Auto-generated method stub
+		from("timer:frist-timer")
+		.log("${body}")
+		.transform().constant("ch jaya surya ")
+		.log("${body}")
+//		.transform().constant("current time"+ LocalTime.now())
+//		.bean("getBeanForTime")
+		.bean(getBeanForTime)
+		.log("${body}")
+		.to("log:frist-timer");
+	}
+
+}
+
+@Component
+class GetBeanForTime{
+	public String getBeanForTime() {
+		return "current time"+ LocalTime.now();
+	}
+}

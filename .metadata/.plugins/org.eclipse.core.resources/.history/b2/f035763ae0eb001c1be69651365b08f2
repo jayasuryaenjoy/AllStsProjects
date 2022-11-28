@@ -1,0 +1,39 @@
+package com.example.demo.Spring.boot.Email;
+
+import javax.mail.MessagingException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
+
+import com.example.demo.Spring.boot.Email.Service.EmailSenderService;
+
+@SpringBootApplication
+public class Application {
+	
+	@Autowired
+	private EmailSenderService service;
+
+	public static void main(String[] args) {
+		SpringApplication.run(Application.class, args);
+	}
+	
+//	@EventListener(ApplicationReadyEvent.class)
+//	public void triggerMail() {
+//		service.sendSimpleEmail("srikanth.repala@serole.com",
+//				"Hello  Madam",
+//				"this our java team");
+//	}
+
+	@EventListener(ApplicationReadyEvent.class)
+	public void triggerMail() throws MessagingException {
+
+		service.sendEmailWithAttachment("srikanth.repala@serole.com",
+				"This is Email Body with Attachment...",
+				"This email has attachment",
+				"C:\\Users\\user\\Downloads\\tree-736885__480.jpg");
+
+	}
+}

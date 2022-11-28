@@ -1,0 +1,16 @@
+
+Z
+java:S1172(")Remove this unused method parameter "id".(„¤¿ÌÿÿÿÿÿHıGRMAJORZ
+CODE_SMELL
+
+java:S1128	"PRemove this unused import 'org.springframework.web.bind.annotation.PostMapping'.(äƒà°ùÿÿÿÿHÿGRMINORZ
+CODE_SMELL
+s	java:S1254"<This block of commented-out lines of code should be removed.(‡êîóúÿÿÿÿ8‰¦ïöÊ0HHRMAJORZ
+CODE_SMELL
+O
+java:S1128"Remove this duplicated import.(‘í™ıüÿÿÿÿH‚HRMINORZ
+CODE_SMELL
+„
+java:S1128
+"SRemove this unused import 'org.springframework.web.bind.annotation.RestController'.(±íş¡şÿÿÿÿH„HRMINORZ
+CODE_SMELL

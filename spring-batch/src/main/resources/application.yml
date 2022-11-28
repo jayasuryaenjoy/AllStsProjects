@@ -1,0 +1,5 @@
+server:
+  port: 8081
+Spring.batch.job.enabled: false
+
+

@@ -1,0 +1,16 @@
+package com.example.apachecamel.apachecamel.routes.a;
+
+import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.spi.annotations.Component;
+
+@Component(value = "Router")
+public class MyFristTimerRoutes extends RouteBuilder {
+
+	@Override
+	public void configure() throws Exception {
+		// TODO Auto-generated method stub
+		from("timer:frist-timer")
+		.to("log:frist-timer");
+	}
+
+}

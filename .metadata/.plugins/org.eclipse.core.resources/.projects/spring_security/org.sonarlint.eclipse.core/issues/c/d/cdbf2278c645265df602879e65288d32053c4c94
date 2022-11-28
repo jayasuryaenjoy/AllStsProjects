@@ -1,0 +1,14 @@
+
+n
+java:S1874 ";Remove this use of "NoOpPasswordEncoder"; it is deprecated.(¦œÏ8”¶‹í¤0H´ARMINORZ
+CODE_SMELL
+s
+java:S1874";Remove this use of "NoOpPasswordEncoder"; it is deprecated.(ñ˜Ñşÿÿÿÿÿ8²ŞÏ¤0HµARMINORZ
+CODE_SMELL
+
+java:S1128
+"]Remove this unused import 'org.springframework.security.core.userdetails.UserDetailsService'.(¶…¥à8”¶‹í¤0H¶ARMINORZ
+CODE_SMELL
+n
+java:S1874 ";Remove this use of "NoOpPasswordEncoder"; it is deprecated.(¦œÏ8”¶‹í¤0H¸ARMINORZ
+CODE_SMELL

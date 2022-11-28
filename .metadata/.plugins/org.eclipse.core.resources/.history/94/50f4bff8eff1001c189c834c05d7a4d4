@@ -1,0 +1,81 @@
+package TaskByRachana.Entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "TASKBYRACHANA")
+public class RachanaEntity {
+
+	@Id
+	@GeneratedValue
+	int id;
+	@Column(name = "fristName")
+	String fristName;
+	String lastName;
+	String Email;
+	String BloodGroup;
+
+	public RachanaEntity() {
+		super();
+	}
+
+	public RachanaEntity(int id, String fristName, String lastName, String email, String bloodGroup) {
+		super();
+		this.id = id;
+		this.fristName = fristName;
+		this.lastName = lastName;
+		Email = email;
+		BloodGroup = bloodGroup;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getFristName() {
+		return fristName;
+	}
+
+	public void setFristName(String fristName) {
+		this.fristName = fristName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getEmail() {
+		return Email;
+	}
+
+	public void setEmail(String email) {
+		Email = email;
+	}
+
+	public String getBloodGroup() {
+		return BloodGroup;
+	}
+
+	public void setBloodGroup(String bloodGroup) {
+		BloodGroup = bloodGroup;
+	}
+
+	@Override
+	public String toString() {
+		return "RachanaEntity [id=" + id + ", fristName=" + fristName + ", lastName=" + lastName + ", Email=" + Email
+				+ ", BloodGroup=" + BloodGroup + "]";
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.example.demo.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import com.example.demo.Entity.JavaTeam;
+import com.example.demo.Service.JsonService;
+
+@RestController
+@RequestMapping("/save")
+public class JsonController {
+
+	@Autowired
+	private JsonService service;
+
+	@PostMapping("/Team")
+	public Iterable<JavaTeam> list() {
+		return service.list();
+	}
+}

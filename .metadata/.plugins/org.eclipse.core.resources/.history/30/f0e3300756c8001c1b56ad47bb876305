@@ -1,0 +1,28 @@
+package com.example.demo.Dao;
+
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.Model.Employee;
+
+@Repository
+public class EmployeeDao implements Iemployee {
+
+	@Override
+	public int saveEmployee(Employee e) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateEmployee(Employee e) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteEmployee(Integer id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

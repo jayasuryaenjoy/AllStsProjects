@@ -1,0 +1,5 @@
+
+	java:S116"]Rename this field "country_repository" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎŒúÿÿÿÿHšGRMINORZ
+CODE_SMELL
+Š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²ÿÎ±ıÿÿÿÿH™GRMINORZ
+CODE_SMELL
